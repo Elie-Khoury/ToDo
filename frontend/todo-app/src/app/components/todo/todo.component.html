@@ -6,7 +6,7 @@
   </div>
   <div class="new-item-container">
     <input type="text" placeholder="Add new item" [(ngModel)]="content" />
-    <button>Add</button>
+    <button (click)="addTodo(content)">Add</button>
   </div>
   <br />
   <hr />
@@ -14,7 +14,7 @@
   @for(item of todo_list; track item.id){
   <div class="todo-item">
     <h2>{{ item.content }}</h2>
-    <button>Delete</button>
+    <button (click)="deleteTodo(item.id)">Delete</button>
   </div>
   }
 </div>
