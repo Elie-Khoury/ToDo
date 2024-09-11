@@ -17,6 +17,18 @@ builder.Services.AddEntityFrameworkNpgsql().AddDbContext<TodoContext>(options
 
 builder.Services.AddControllers();
 
+// Add services to the container.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        policyBuilder =>
+        {
+            policyBuilder.WithOrigins("http://localhost:4200")
+                         .AllowAnyHeader()
+                         .AllowAnyMethod();
+        });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,6 +39,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowSpecificOrigin"); // Use the CORS policy
+
+app.UseAuthorization();
 
 app.MapControllers();
 

@@ -2755,22 +2755,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\inmind\\todo-project\\backend\\todo-api\\todo-api.csproj",
+      "projectUniqueName": "M:\\Work\\inmind\\ToDo Project\\ToDo\\backend\\todo-api\\todo-api.csproj",
       "projectName": "todo-api",
-      "projectPath": "C:\\Work\\inmind\\todo-project\\backend\\todo-api\\todo-api.csproj",
+      "projectPath": "M:\\Work\\inmind\\ToDo Project\\ToDo\\backend\\todo-api\\todo-api.csproj",
       "packagesPath": "C:\\Users\\Elie\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\inmind\\todo-project\\backend\\todo-api\\obj\\",
+      "outputPath": "M:\\Work\\inmind\\ToDo Project\\ToDo\\backend\\todo-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Elie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Elie\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

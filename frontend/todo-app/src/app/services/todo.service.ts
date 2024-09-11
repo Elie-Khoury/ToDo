@@ -10,14 +10,14 @@ export class TodoService {
   constructor(private http: HttpClient) { }
 
   getToDos(){
-    return this.http.get<ITODO[]>('http://localhost:7068/api/Todo');
+    return this.http.get<ITODO[]>('http://localhost:5080/api/Todo');
   }
 
   addTodo(content: string){
-    return this.http.post<ITODO>('http://localhost:7068/api/Todo', content);
+    return this.http.post<ITODO>('http://localhost:5080/api/Todo', content);
   }
 
   deleteTodo(id: number){
-    return this.http.delete<ITODO>(`http://localhost:7068/api/Todo/${id}`);
+    return this.http.delete<ITODO>(`http://localhost:5080/api/Todo/${id}`);
   }
 }
