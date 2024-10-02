@@ -5,13 +5,6 @@
     .header {
         text-align: center;
         margin-top: 5%;
-        position: relative;
-
-        button {
-            position: absolute;
-            right: 3%;
-            top: 20%;
-        }
     }
 
     .new-item-container {
@@ -25,6 +18,23 @@
             padding: 2%;
             border-radius: 5px;
             font-size: 1.5em;
+        }
+
+        button {
+            height: 100%;
+            cursor: pointer;
+            background: #151515;
+            color: #fafafa;
+            border: 2px solid #151515;
+            border-radius: 5px;
+            padding: 1% 2%;
+            font-weight: 600;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                background: #fafafa;
+                color: #151515;
+            }
         }
     }
 
@@ -40,6 +50,8 @@
 
         button {
             margin-left: auto;
+            cursor: pointer;
+            background: #920000;
         }
 
         &.completed {
